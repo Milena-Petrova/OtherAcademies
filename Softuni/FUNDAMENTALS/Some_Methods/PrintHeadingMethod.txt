@@ -1,0 +1,22 @@
+public class Demo {
+//метод, който печати линия отсимволи
+    public static void printLine(int number, char symbol){
+        for (int i = 0; i < number ; i++) {
+            System.out.print(symbol);
+        }
+        System.out.println();
+    }
+//метод, който печата заглавия и ползва подпрограма за символите
+    public static void printHeading(String name){
+        printLine(name.length(), '*');
+        System.out.println(name);
+        printLine(name.length(), ';');
+    }
+КОД
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+                String name = scanner.nextLine();
+                printHeading(name);
+
+    }
+}
